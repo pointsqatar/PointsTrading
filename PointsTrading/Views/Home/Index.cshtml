@@ -1,237 +1,161 @@
-﻿<!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if (IE 9)]><html class="no-js ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!-->
-<html lang="en-US">
-<!--<![endif]-->
-<head>
-    <!-- Meta Tags -->
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Points Qatar - Trading</title>
-    <meta name="description" content="We are doing trading with best product in Qatar" />
-    <!-- Mobile Specifics -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="HandheldFriendly" content="true" />
-    <meta name="MobileOptimized" content="320" />
-    <!-- Mobile Internet Explorer ClearType Technology -->
-    <!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
-    <!-- Bootstrap -->
-    <link href="~/_include/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Main Style -->
-    <link href="~/_include/css/main.css" rel="stylesheet">
-    <!-- Supersized -->
-    <link href="~/_include/css/supersized.css" rel="stylesheet">
-    <link href="~/_include/css/supersized.shutter.css" rel="stylesheet">
-    <!-- FancyBox -->
-    <link href="~/_include/css/fancybox/jquery.fancybox.css" rel="stylesheet">
-    <!-- Font Icons -->
-    <link href="~/_include/css/fonts.css" rel="stylesheet">
-    <!-- Shortcodes -->
-    <link href="v_include/css/shortcodes.css" rel="stylesheet">
-    <!-- Responsive -->
-    <link href="~/_include/css/bootstrap-responsive.min.css" rel="stylesheet">
-    <link href="~/_include/css/responsive.css" rel="stylesheet">
-    <!-- Supersized -->
-    <link href="~/_include/css/supersized.css" rel="stylesheet">
-    <link href="~/_include/css/supersized.shutter.css" rel="stylesheet">
-    <!-- Google Font -->
-    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
-    <!-- Fav Icon -->
-    <link rel="icon" href="~/_include/img/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="~/_include/img/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="#">
-    <link rel="apple-touch-icon" sizes="114x114" href="#">
-    <link rel="apple-touch-icon" sizes="72x72" href="#">
-    <link rel="apple-touch-icon" sizes="144x144" href="#">
-    <!-- Modernizr -->
-    <script src="~/_include/js/modernizr.js"></script>
-</head>
-<body>
-    <div id="work" class="page">
-        <div class="container">
-            <!-- Title Page -->
-            <div class="row" style="border-style: outset; background-color: honeydew">
-                <div class="span2" style="text-align : center">
-                    <a href="@Url.Action("Index","Home")"><img src="~/_include/img/points-logo.png" alt="logo" style="width:170px;height:100px;margin-top: 15px;"></a>
-                </div>
-                <div class="span8" style="height:140px">
-                    <div class="title-page">
-                        <h2 class="title">Welcome to Points Trading</h2>
-                        <h3 class="title-description">Please <a href="http://www.pointsqatar.com/home/contact" target="_blank"><b>contact us</b></a> for more information.</h3>
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="slider-area">
+    <div class="zigzag-bottom"></div>
+    <div id="slide-list" class="carousel carousel-fade slide" data-ride="carousel">
+
+        <div class="slide-bulletz">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ol class="carousel-indicators slide-indicators">
+                            <li data-target="#slide-list" data-slide-to="0" class="active"></li>
+                            <li data-target="#slide-list" data-slide-to="1"></li>
+                            <li data-target="#slide-list" data-slide-to="2"></li>
+                        </ol>
                     </div>
                 </div>
             </div>
-            <!-- End Title Page -->
-            <!-- Portfolio Projects -->
-            <div class="row" style="margin-top: 65px;">
-                <div class="span2">
-                    <!-- Filter -->
-                    <nav id="options" class="work-nav">
-                        <ul id="filters" class="option-set" data-option-key="filter">
-                            <li class="type-work" style="font-weight : 600;">Refine By</li>
-                            <li><a href="#filter" data-option-value="*" class="selected">All Products</a></li>
-                            <li><a href="#filter" data-option-value=".vacuumCleaner">Vacuum Clearner</a></li>
-                            <li><a href="#filter" data-option-value=".eScarf">E-Scarf</a></li>
-                            <li><a href="#filter" data-option-value=".ipCamera">IP-Camera</a></li>
-                            @*<li><a href="#filter" data-option-value=".video">Videos</a></li>*@
-                        </ul>
-                    </nav>
-                    <!-- End Filter -->
-                </div>
+        </div>
 
-                <div class="span10">
-                    <div class="row">
-                        <section id="projects">
-                            <ul id="thumbs">
-                                <!-- Item IP Camera -->
-                                <li class="item-thumbs span3 ipCamera">
-                                    <!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
-                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="ATW Smart Home - IP Camera" href="~/_include/img/work/full/IPCamera_Full.jpg">
-                                        <span class="overlay-img"></span>
-                                        <span class="overlay-img-thumb font-icon-plus"></span>
-                                    </a>
-                                    <!-- Thumb Image and Description -->
-                                    <img src="~/_include/img/work/thumbs/IPCamera_Thumb.jpg"
-                                         alt="<p>Smart Home, All-in-One | Wide Footage Rotatable Angle, Total Security | Simple QR Code Scan and Pairing | On-time alert | Smart Scheduling, Smart Life | Pets Care</p><p><b>APP Operation</b> - Live Sound Receive | 2‐Way Audio Talk | Security Alarm Setting:ON/OFF | Scenario Mode Setting</p>">
-                                </li>
-                                <!-- End Item Project -->
-                                <!-- Item Project and Filter Name -->
-                                @*<li class="item-thumbs span3 video">
-                                        <!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
-                                        <a class="hover-wrap fancybox-media" data-fancybox-group="video" title="Video Content From youtube" href="http://www.youtube.com/watch?v=JVTJQHXoItY">
-                                            <span class="overlay-img"></span>
-                                            <span class="overlay-img-thumb font-icon-plus"></span>
-                                        </a>
-                                        <!-- Thumb Image and Description -->
-                                        <img src="~/_include/img/work/thumbs/C02_Thumb.jpg" alt="Video">
-                                    </li>*@
-                                <!-- End Item Project -->
-                                <!-- Item Project and Filter Name -->
-                                <li class="item-thumbs span3 eScarf">
-                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="<b>G2T-N1+</b>" href="~/_include/img/work/full/G2T_N1_Full.jpg">
-                                        <span class="overlay-img"></span>
-                                        <span class="overlay-img-thumb font-icon-plus"></span>
-                                    </a>
-                                    <!-- Thumb Image and Description -->
-                                    <img src="~/_include/img/work/thumbs/G2T_N1_Thumb.jpg"
-                                         alt="<p>Compact, ergonomic desing  | Adjustable neck-hoop design | Eco-friendly desing & carbon reducing | Avaliable in Red, Yellow and White colors | Controls: Cooling / heating / off </p><p><b>Input Voltage</b> : 5V Dc | <b>Weight</b> : 373g(S~M) / 328g(L~XL) | <b>Temperature</b>: -10℃ ~ 50℃ | <b>Battery Capacity</b>: 6000mAh Li Battery</p> ">
-                                </li>
-                                <!-- End Item Project -->
-                                <!--Item for Vacum Cleaner C02-->
-                                <li class="item-thumbs span3 vacuumCleaner">
-                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="<b>C02</b> - The Quietest Auto Vacuum Cleaner" href="~/_include/img/work/full/C02_Full.jpg">
-                                        <span class="overlay-img"></span>
-                                        <span class="overlay-img-thumb font-icon-plus"></span>
-                                    </a>
-                                    <!-- Thumb Image and Description -->
-                                    <img src="~/_include/img/work/thumbs/C02_Thumb.jpg"
-                                         alt="<p>Unique Side Brush Design | HEPA - Type A | Scheduling Clever Mop Design | Touch Screen </p><p><b>Dimension</b> : 36cm * 9cm | <b>Weight</b> : 3kg(Battery Included) | <b>Input</b>: AC100V - 240V 50/60 Hz | <b>Power Consumption</b>: 12W | <b>Battery Capacity</b>: 2200mAh Li Battery</p> ">
-                                </li>
-                                <!--End of Vacuum Cleaner-->
-                                <!--Item for Vacum Cleaner-->
-                                <li class="item-thumbs span3 vacuumCleaner">
-                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="<b>C01</b> - Special Air Passage Design" href="~/_include/img/work/full/C01_Full.jpg">
-                                        <span class="overlay-img"></span>
-                                        <span class="overlay-img-thumb font-icon-plus"></span>
-                                    </a>
-                                    <!-- Thumb Image and Description -->
-                                    <img src="~/_include/img/work/thumbs/C01_Thumb.jpg"
-                                         alt="<p>Rubber Wrap Side Brushed | Easy Open Dust Box | Remote Control | Curve Design </p><p><b>Dimension</b> : 36cm * 9cm | <b>Weight</b> : 3kg(Battery Included) | <b>Input</b>: AC100V - 240V 50/60 Hz | <b>Power Consumption</b>: 12W | <b>Battery Capacity</b>: 2200mAh Li Battery</p> ">
-                                </li>
-                                <!--End of Vacuum Cleaner-->
-                                <!--Item for Vacum Cleaner C05-->
-                                <li class="item-thumbs span3 vacuumCleaner">
-                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="<b>C05</b> - Cyclone Type Vacuum" href="~/_include/img/work/full/C05_Full.jpg">
-                                        <span class="overlay-img"></span>
-                                        <span class="overlay-img-thumb font-icon-plus"></span>
-                                    </a>
-                                    <!-- Thumb Image and Description -->
-                                    <img src="~/_include/img/work/thumbs/C05_Thumb.jpg"
-                                         alt="<p>Water Tank With Mop | App Control | Call Function | Security Monitoring System </p><p><b>Dimension</b> : 36cm * 10cm | <b>Input</b>: AC100V - 240V 50/60 Hz | <b>Power Consumption</b>: 25W | <b>Battery Capacity</b>: 3000mAh Li Battery</p> ">
-                                </li>
-                                <!--End of Vacuum Cleaner-->
-                                <!--Item for Z07 Vacum Cleaner-->
-                                <li class="item-thumbs span3 vacuumCleaner">
-                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="<b>Z07</b> - UFO Slim Design" href="~/_include/img/work/full/Z07_Full.jpg">
-                                        <span class="overlay-img"></span>
-                                        <span class="overlay-img-thumb font-icon-plus"></span>
-                                    </a>
-                                    <!-- Thumb Image and Description -->
-                                    <img src="~/_include/img/work/thumbs/Z07_Thumb.jpg"
-                                         alt="<p>Touch Panel | Built-in Bluetooth Speaker | Triple HPA Filter | Rubber Wrap Side Brushes  </p><p><b>Dimension</b> : 27.5cm * 26cm * 7cm | <b>Weight</b> : 1.9kg(Battery Included) | <b>Input</b>: AC100V - 240V 50/60 Hz | <b>Power Consumption</b>: 18W | <b>Battery Capacity</b>: 2200mAh Li Battery</p> ">
-                                </li>
-                                <!--End of Vacuum Cleaner-->
-                                <!-- Item Project and Filter Name -->
-                                <li class="item-thumbs span3 vacuumCleaner">
-                                    <!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
-                                    <a class="hover-wrap fancybox-media" data-fancybox-group="video" title="C02 - Video" href="https://www.youtube.com/watch?v=JVTJQHXoItY">
-                                        <span class="overlay-img"></span>
-                                        <span class="overlay-img-thumb font-icon-plus"></span>
-                                    </a>
-                                    <!-- Thumb Image and Description -->
-                                    <img src="~/_include/img/work/thumbs/C02_Thumb.jpg" alt="C02 - Video">
-                                </li>
-                                <!-- End Item Project -->
-                                <!--Item for Z06 Vacum Cleaner-->
-                                <li class="item-thumbs span3 vacuumCleaner">
-                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="<b>Z06</b> - Square Design - reach more blind spot" href="~/_include/img/work/full/Z06_Full.jpg">
-                                        <span class="overlay-img"></span>
-                                        <span class="overlay-img-thumb font-icon-plus"></span>
-                                    </a>
-                                    <!-- Thumb Image and Description -->
-                                    <img src="~/_include/img/work/thumbs/Z06_Thumb.jpg"
-                                         alt="<p>Touch Panel | Magnetic Install Side Brush | Triple HPA Filter | Rubber Wrap Side Brushes  </p><p><b>Dimension</b> : 31cm * 7cm | <b>Weight</b> : 1.8kg(Battery Included) | <b>Input</b>: AC100V - 240V 50/60 Hz | <b>Power Consumption</b>: 13W | <b>Battery Capacity</b>: 2200mAh Li Battery</p> ">
-                                </li>
-                                <!--End of Vacuum Cleaner-->
-                                <!--Item for Z01 Vacum Cleaner-->
-                                <li class="item-thumbs span3 vacuumCleaner">
-                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="<b>Z01</b> - Square Design - reach more blind spot" href="~/_include/img/work/full/Z01_Full.jpg">
-                                        <span class="overlay-img"></span>
-                                        <span class="overlay-img-thumb font-icon-plus"></span>
-                                    </a>
-                                    <!-- Thumb Image and Description -->
-                                    <img src="~/_include/img/work/thumbs/Z01_Thumb.jpg"
-                                         alt="<p>Diamond Cutting | Smile Suction Port | Edge & Sprial Cleaning Mode | Upright Charging Station </p><p><b>Dimension</b> : 26cm * 26cm * 7cm | <b>Weight</b> : 1.6kg(Battery Included) | <b>Input</b>: AC100V - 240V 50/60 Hz | <b>Power Consumption</b>: 16W | <b>Battery Capacity</b>: 2200mAh Li Battery</p> ">
-                                </li>
-                                <!--End of Vacuum Cleaner-->
-
-                            </ul>
-                        </section>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <div class="single-slide">
+                    <div class="slide-bg slide-one"></div>
+                    <div class="slide-text-wrapper">
+                        <div class="slide-text">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6 col-md-offset-6">
+                                        <div class="slide-content">
+                                            <h2>We are awesome</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, dolorem, excepturi. Dolore aliquam quibusdam ut quae iure vero exercitationem ratione!</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ab molestiae minus reiciendis! Pariatur ab rerum, sapiente ex nostrum laudantium.</p>
+                                            <a href="" class="readmore">Learn more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- End Portfolio Projects -->
+            <div class="item">
+                <div class="single-slide">
+                    <div class="slide-bg slide-two"></div>
+                    <div class="slide-text-wrapper">
+                        <div class="slide-text">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6 col-md-offset-6">
+                                        <div class="slide-content">
+                                            <h2>We are great</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aspernatur, dolorum harum molestias tempora deserunt voluptas possimus quos eveniet, vitae voluptatem accusantium atque deleniti inventore. Enim quam placeat expedita! Quibusdam!</p>
+                                            <a href="" class="readmore">Learn more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="single-slide">
+                    <div class="slide-bg slide-three"></div>
+                    <div class="slide-text-wrapper">
+                        <div class="slide-text">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6 col-md-offset-6">
+                                        <div class="slide-content">
+                                            <h2>We are superb</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, eius?</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti voluptates necessitatibus dicta recusandae quae amet nobis sapiente explicabo voluptatibus rerum nihil quas saepe, tempore error odio quam obcaecati suscipit sequi.</p>
+                                            <a href="" class="readmore">Learn more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <!-- Footer -->
-    <footer>
-        <p class="credits">&copy; 2016 Alrights Reserved. Developed & Maintained by <a target="_blank" href="http://www.pointsqatar.com/" title="Points For Technologies, Systems and Networks">Points</a></p>
-    </footer>
-    <!-- End Footer -->
-    <!-- Back To Top -->
-    <a id="back-to-top" href="#">
-        <i class="font-icon-arrow-simple-up"></i>
-    </a>
-    <!-- End Back to Top -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
-    <script src="~/_include/js/bootstrap.min.js"></script> <!-- Bootstrap -->
-    <script src="~/_include/js/supersized.3.2.7.min.js"></script> <!-- Slider -->
-    <script src="~/_include/js/waypoints.js"></script> <!-- WayPoints -->
-    <script src="~/_include/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
-    <script src="~/_include/js/jquery.isotope.js"></script> <!-- Isotope Filter -->
-    <script src="~/_include/js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
-    <script src="~/_include/js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
-    <script src="~/_include/js/jquery.tweet.js"></script> <!-- Tweet -->
-    <script src="~/_include/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
-    <script src="~/_include/js/main.js"></script>
-</body>
-</html>
+</div> <!-- End slider area -->
+
+<div class="promo-area">
+    <div class="zigzag-bottom"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="single-promo">
+                    <i class="fa fa-opencart"></i>
+                    <p>Quality Produts</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="single-promo">
+                    <i class="fa fa-truck"></i>
+                    <p>Free shipping</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="single-promo">
+                    <i class="fa fa-clock-o"></i>
+                    <p>Ontime Delivery</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="single-promo">
+                    <i class="fa fa-gift"></i>
+                    <p>New Arrivals</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- End promo area -->
+
+<div class="maincontent-area">
+    <div class="zigzag-bottom"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="latest-product">
+                    <h2 class="section-title">Latest Products</h2>
+                    <div class="product-carousel">
+
+                        @foreach (var item in ViewBag.LatestProducts)
+                        {
+                            <div class="single-product">
+                                <div class="product-f-image">
+                                    <img src="@item.ProductImageURL" alt="">
+                                    <div class="product-hover">
+                                        <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i>View Details</a>
+                                    </div>
+                                </div>
+                                <h2><a href="">@item.ProductName</a></h2>
+                                <div class="product-carousel-price">
+                                    <ins>@item.ProductPrice QR</ins>
+
+                                    @if (item.ProductOldPrice != null)
+                                    {
+                                        <del> @item.ProductOldPrice QR</del>
+                                    }
+                                </div>
+                            </div>
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

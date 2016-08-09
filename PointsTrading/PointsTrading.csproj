@@ -89,82 +89,48 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\owl.carousel.css" />
+    <Content Include="css\responsive.css" />
+    <Content Include="css\style.css" />
     <Content Include="Global.asax" />
+    <Content Include="img\crossword.png" />
+    <Content Include="img\favicon.ico" />
+    <Content Include="img\Products\102\IP-Camera.png" />
+    <Content Include="img\points-logo.png" />
+    <Content Include="img\product-1.jpg" />
+    <Content Include="img\product-2.jpg" />
+    <Content Include="img\product-3.jpg" />
+    <Content Include="img\product-4.jpg" />
+    <Content Include="img\product-5.jpg" />
+    <Content Include="img\product-6.jpg" />
+    <Content Include="img\product-thumb-1.jpg" />
+    <Content Include="img\product-thumb-2.jpg" />
+    <Content Include="img\product-thumb-3.jpg" />
+    <Content Include="img\product-thumb-4.jpg" />
+    <Content Include="img\Products\100\C01.png" />
+    <Content Include="img\Products\100\C02.png" />
+    <Content Include="img\Products\100\C05.png" />
+    <Content Include="img\Products\100\Z01.png" />
+    <Content Include="img\Products\100\Z06.png" />
+    <Content Include="img\Products\100\Z07.png" />
+    <Content Include="img\Products\101\G2T-N1.png" />
+    <Content Include="img\services_logo__1.jpg" />
+    <Content Include="img\services_logo__2.jpg" />
+    <Content Include="img\services_logo__3.jpg" />
+    <Content Include="img\services_logo__4.jpg" />
+    <Content Include="img\slide-1.jpg" />
+    <Content Include="img\slide-2.jpg" />
+    <Content Include="img\slide-3.jpg" />
+    <Content Include="js\jquery.easing.1.3.min.js" />
+    <Content Include="js\jquery.sticky.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\owl.carousel.min.js" />
     <Content Include="Web.config" />
-    <Content Include="_include\css\bootstrap-responsive.min.css" />
-    <Content Include="_include\css\bootstrap.min.css" />
-    <Content Include="_include\css\fancybox\blank.gif" />
-    <Content Include="_include\css\fancybox\fancybox_loading.gif" />
-    <Content Include="_include\css\fancybox\fancybox_overlay.png" />
-    <Content Include="_include\css\fancybox\fancybox_sprite.png" />
-    <Content Include="_include\css\fancybox\jquery.fancybox.css" />
-    <Content Include="_include\css\fonts.css" />
-    <Content Include="_include\css\fonts\Icons.svg" />
-    <Content Include="_include\css\main.css" />
-    <Content Include="_include\css\responsive.css" />
-    <Content Include="_include\css\shortcodes.css" />
-    <Content Include="_include\css\supersized.css" />
-    <Content Include="_include\css\supersized.shutter.css" />
-    <Content Include="_include\img\favicon.ico" />
-    <Content Include="_include\img\filter-icon.png" />
-    <Content Include="_include\img\filter-icon_%402x.png" />
-    <Content Include="_include\img\logo.png" />
-    <Content Include="_include\img\logo_%402x.png" />
-    <Content Include="_include\img\menu-mobile.png" />
-    <Content Include="_include\img\menu-mobile_%402x.png" />
-    <Content Include="_include\img\points-logo.png" />
-    <Content Include="_include\img\slider-images\image01.jpg" />
-    <Content Include="_include\img\slider-images\image02.jpg" />
-    <Content Include="_include\img\slider-images\image03.jpg" />
-    <Content Include="_include\img\slider-images\image04.jpg" />
-    <Content Include="_include\img\supersized\back.png" />
-    <Content Include="_include\img\supersized\bg-black.png" />
-    <Content Include="_include\img\supersized\bg-hover.png" />
-    <Content Include="_include\img\supersized\button-tray-down.png" />
-    <Content Include="_include\img\supersized\button-tray-up.png" />
-    <Content Include="_include\img\supersized\forward.png" />
-    <Content Include="_include\img\supersized\nav-bg.png" />
-    <Content Include="_include\img\supersized\nav-dot.png" />
-    <Content Include="_include\img\supersized\pause.png" />
-    <Content Include="_include\img\supersized\play.png" />
-    <Content Include="_include\img\supersized\progress-back.png" />
-    <Content Include="_include\img\supersized\progress-bar.png" />
-    <Content Include="_include\img\supersized\progress.gif" />
-    <Content Include="_include\img\supersized\supersized-logo.png" />
-    <Content Include="_include\img\supersized\thumb-back.png" />
-    <Content Include="_include\img\supersized\thumb-forward.png" />
-    <Content Include="_include\img\work\full\C01_Full.jpg" />
-    <Content Include="_include\img\work\full\C02_Full.jpg" />
-    <Content Include="_include\img\work\full\C05_Full.jpg" />
-    <Content Include="_include\img\work\full\G2T_N1_Full.jpg" />
-    <Content Include="_include\img\work\full\IPCamera_Full.jpg" />
-    <Content Include="_include\img\work\full\Z01_Full.jpg" />
-    <Content Include="_include\img\work\full\Z06_Full.jpg" />
-    <Content Include="_include\img\work\full\Z07_Full.jpg" />
-    <Content Include="_include\img\work\thumbs\C01_Thumb.jpg" />
-    <Content Include="_include\img\work\thumbs\C02_Thumb.jpg" />
-    <Content Include="_include\img\work\thumbs\C05_Thumb.jpg" />
-    <Content Include="_include\img\work\thumbs\G2T_N1_Thumb.jpg" />
-    <Content Include="_include\img\work\thumbs\IPCamera_Thumb.jpg" />
-    <Content Include="_include\img\work\thumbs\Z01_Thumb.jpg" />
-    <Content Include="_include\img\work\thumbs\Z06_Thumb.jpg" />
-    <Content Include="_include\img\work\thumbs\Z07_Thumb.jpg" />
-    <Content Include="_include\js\bootstrap.min.js" />
-    <Content Include="_include\js\jquery.fancybox-media.js" />
-    <Content Include="_include\js\jquery.fancybox.pack.js" />
-    <Content Include="_include\js\jquery.isotope.js" />
-    <Content Include="_include\js\jquery.tweet.js" />
-    <Content Include="_include\js\main.js" />
-    <Content Include="_include\js\modernizr.js" />
-    <Content Include="_include\js\placeholder.js" />
-    <Content Include="_include\js\plugins.js" />
-    <Content Include="_include\js\supersized.3.2.7.min.js" />
-    <Content Include="_include\js\waypoints-sticky.js" />
-    <Content Include="_include\js\waypoints.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -173,29 +139,31 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
-    <Content Include="Views\Home\Index.cshtml" />
     <None Include="Properties\PublishProfiles\points-trading.pubxml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Product\Category.cshtml" />
+    <Content Include="Views\Product\Test.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <Content Include="_include\css\fonts\.DS_Store" />
-    <Content Include="_include\css\fonts\Icons.eot" />
-    <Content Include="_include\css\fonts\Icons.ttf" />
-    <Content Include="_include\css\fonts\Icons.woff" />
-    <Content Include="_include\img\.DS_Store" />
-    <Content Include="_include\img\slider-images\.DS_Store" />
-    <Content Include="_include\img\supersized\.DS_Store" />
-    <Content Include="_include\js\.DS_Store" />
-    <Content Include="_include\js\twitter\index.php" />
-    <Content Include="_include\js\twitter\lib\tmhOAuth.php" />
-    <Content Include="_include\js\twitter\lib\tmhUtilities.php" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PointsTradingBusinessLayer\PointsTradingBusinessLayer.csproj">
+      <Project>{4887dbb0-2a76-4336-b67d-c7e7f25a99af}</Project>
+      <Name>PointsTradingBusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PointsTradingDataAccessLayer\PointsTradingDataAccessLayer.csproj">
+      <Project>{12a4533d-a46c-49ae-9987-08fccaaf6f53}</Project>
+      <Name>PointsTradingDataAccessLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

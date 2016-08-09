@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "Category";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    string categoryName = string.Empty;
+    if (ViewBag.CatagoryName != null)
+    {
+        categoryName = ViewBag.CatagoryName[0].CategoryName;
+    }
+}
+
+<div class="product-big-title-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="product-bit-title text-center">
+                    <h2>@categoryName</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="single-product-area">
+    <div class="zigzag-bottom"></div>
+    <div class="container">
+        <div class="row">
+            @foreach (var item in ViewBag.Product)
+            {
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="@item.ProductImageURL" alt="">
+                        </div>
+                        <h2><a href="">@item.ProductName</a></h2>
+                        <div class="product-carousel-price">
+                            <ins>@item.ProductPrice QR</ins>
+
+                            @if (item.ProductOldPrice != null)
+                            {
+                                <del> @item.ProductOldPrice QR</del>
+                            }
+                        </div>
+
+                        <div class="product-option-shop">
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            }
+
+
+        </div>
+    </div>
+</div>

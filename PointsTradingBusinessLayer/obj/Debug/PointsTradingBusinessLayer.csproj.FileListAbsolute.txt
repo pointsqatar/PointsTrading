@@ -1,0 +1,12 @@
+D:\Projects\PointsTrading\PointsTradingBusinessLayer\bin\Debug\PointsTradingBusinessLayer.dll.config
+D:\Projects\PointsTrading\PointsTradingBusinessLayer\bin\Debug\PointsTradingBusinessLayer.dll
+D:\Projects\PointsTrading\PointsTradingBusinessLayer\bin\Debug\PointsTradingBusinessLayer.pdb
+D:\Projects\PointsTrading\PointsTradingBusinessLayer\bin\Debug\EntityFramework.dll
+D:\Projects\PointsTrading\PointsTradingBusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\PointsTrading\PointsTradingBusinessLayer\bin\Debug\PointsTradingDataAccessLayer.dll
+D:\Projects\PointsTrading\PointsTradingBusinessLayer\bin\Debug\PointsTradingDataAccessLayer.pdb
+D:\Projects\PointsTrading\PointsTradingBusinessLayer\bin\Debug\EntityFramework.xml
+D:\Projects\PointsTrading\PointsTradingBusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\PointsTrading\PointsTradingBusinessLayer\obj\Debug\PointsTradingBusinessLayer.csprojResolveAssemblyReference.cache
+D:\Projects\PointsTrading\PointsTradingBusinessLayer\obj\Debug\PointsTradingBusinessLayer.dll
+D:\Projects\PointsTrading\PointsTradingBusinessLayer\obj\Debug\PointsTradingBusinessLayer.pdb
