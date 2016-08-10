@@ -40,7 +40,7 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-sm-6">
+                        <div class="col-sm-5">
                             <div class="product-images">
                                 <div class="product-main-img">
                                     <img src="@singleProduct.ProductImageURL" alt="">
@@ -48,7 +48,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-6">
+                        <div class="col-sm-7">
                             <div class="product-inner">
                                 <h2 class="product-name">@singleProduct.ProductName</h2>
                                 <div class="product-inner-price">
@@ -64,7 +64,7 @@
                                 </form>
 
                                 <div class="product-inner-category">
-                                    <p>Category: <a href="">@singleProduct.ProductCategoryID</a>
+                                    <p>Category: <a href="@Url.Action("category","product",new { id=category.CategoryID })">@category.CategoryName</a>
                                 </div>
 
                                 <div role="tabpanel">

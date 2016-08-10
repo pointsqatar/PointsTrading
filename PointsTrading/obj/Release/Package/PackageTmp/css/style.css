@@ -204,7 +204,7 @@ body {
 
 .mainmenu-area ul.navbar-nav li a {
     color: #fff;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 700;
     padding: 20px;
 }
@@ -902,6 +902,7 @@ input[type="submit"], button[type=submit] {
 
 .product-main-img {
     margin-bottom: 20px;
+    border: 1px solid #ddd;
 }
 
 .product-gallery {
@@ -1335,6 +1336,7 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button {
 
 .single-shop-product {
     margin-bottom: 50px;
+    border: 1px solid #ddd;
 }
 
 .pagination > li > a, .pagination > li > span {

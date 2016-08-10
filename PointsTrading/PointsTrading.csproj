@@ -102,6 +102,7 @@
     <Content Include="css\style.css" />
     <Content Include="Global.asax" />
     <Content Include="img\crossword.png" />
+    <Content Include="img\Products\102\Doc-Camera.png" />
     <Content Include="img\favicon.ico" />
     <Content Include="img\Products\102\IP-Camera.png" />
     <Content Include="img\points-logo.png" />
@@ -122,6 +123,10 @@
     <Content Include="img\Products\100\Z06.png" />
     <Content Include="img\Products\100\Z07.png" />
     <Content Include="img\Products\101\G2T-N1.png" />
+    <Content Include="img\Products\103\FingerPring-Attendance.png" />
+    <Content Include="img\Products\104\IWB.png" />
+    <Content Include="img\Products\104\Pico-PC.png" />
+    <Content Include="img\Products\104\WFD.png" />
     <Content Include="img\services_logo__1.jpg" />
     <Content Include="img\services_logo__2.jpg" />
     <Content Include="img\services_logo__3.jpg" />
