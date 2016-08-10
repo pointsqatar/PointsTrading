@@ -1,0 +1,10 @@
+D:\Projects\PointsTrading\PointsTradingDataAccessLayer\bin\Release\PointsTradingDataAccessLayer.dll.config
+D:\Projects\PointsTrading\PointsTradingDataAccessLayer\bin\Release\PointsTradingDataAccessLayer.dll
+D:\Projects\PointsTrading\PointsTradingDataAccessLayer\bin\Release\PointsTradingDataAccessLayer.pdb
+D:\Projects\PointsTrading\PointsTradingDataAccessLayer\bin\Release\EntityFramework.dll
+D:\Projects\PointsTrading\PointsTradingDataAccessLayer\bin\Release\EntityFramework.SqlServer.dll
+D:\Projects\PointsTrading\PointsTradingDataAccessLayer\bin\Release\EntityFramework.xml
+D:\Projects\PointsTrading\PointsTradingDataAccessLayer\bin\Release\EntityFramework.SqlServer.xml
+D:\Projects\PointsTrading\PointsTradingDataAccessLayer\obj\Release\PointsTradingDataAccessLayer.csprojResolveAssemblyReference.cache
+D:\Projects\PointsTrading\PointsTradingDataAccessLayer\obj\Release\PointsTradingDataAccessLayer.dll
+D:\Projects\PointsTrading\PointsTradingDataAccessLayer\obj\Release\PointsTradingDataAccessLayer.pdb

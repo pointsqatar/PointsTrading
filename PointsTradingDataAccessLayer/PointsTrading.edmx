@@ -16,7 +16,7 @@
           <Key>
             <PropertyRef Name="ProductID" />
           </Key>
-          <Property Name="ProductID" Type="int" Nullable="false" />
+          <Property Name="ProductID" Type="nvarchar" MaxLength="10" Nullable="false" />
           <Property Name="ProductName" Type="nvarchar(max)" Nullable="false" />
           <Property Name="ProductPrice" Type="nchar" MaxLength="10" Nullable="false" />
           <Property Name="ProductOldPrice" Type="nchar" MaxLength="10" />
@@ -64,7 +64,7 @@
           <Key>
             <PropertyRef Name="ProductID" />
           </Key>
-          <Property Name="ProductID" Type="Int32" Nullable="false" />
+          <Property Name="ProductID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="ProductName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="ProductPrice" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
           <Property Name="ProductOldPrice" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />

@@ -14,7 +14,7 @@ namespace PointsTradingDataAccessLayer
     
     public partial class ProductDetail
     {
-        public int ProductID { get; set; }
+        public string ProductID { get; set; }
         public string ProductName { get; set; }
         public string ProductPrice { get; set; }
         public string ProductOldPrice { get; set; }

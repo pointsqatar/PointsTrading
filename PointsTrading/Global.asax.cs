@@ -11,8 +11,12 @@ namespace PointsTrading
     {
         protected void Application_Start()
         {
+            //int noOfUsers = 0;
+
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+
+            //Application["NoOfUsers"] = noOfUsers++;
         }
     }
 }

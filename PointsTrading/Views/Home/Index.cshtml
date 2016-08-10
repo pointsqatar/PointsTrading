@@ -4,7 +4,74 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<div class="maincontent-area">
+    <div class="zigzag-bottom"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="latest-product">
+                    <h2 class="section-title">Check Our Latest Products</h2>
+                    <div class="product-carousel">
 
+                        @foreach (var item in ViewBag.LatestProducts)
+                        {
+                            <div class="single-product">
+                                <div class="product-f-image">
+                                    <img src="@item.ProductImageURL" alt="">
+                                    <div class="product-hover">
+                                        <a href="@(Url.Action("category","product",new { id=item.ProductCategoryID })+"?productID="+ item.ProductID)" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i>View Details</a>
+                                    </div>
+                                </div>
+                                <h2><a href="@(Url.Action("category","product",new { id=item.ProductCategoryID })+"?productID="+ item.ProductID)">@item.ProductName</a></h2>
+                                <div class="product-carousel-price">
+                                    <ins>@item.ProductPrice QR</ins>
+
+                                    @if (!string.IsNullOrEmpty(item.ProductOldPrice))
+                                    {
+                                        <del> @item.ProductOldPrice QR</del>
+                                    }
+                                </div>
+                            </div>
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="promo-area">
+    <div class="zigzag-bottom"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="single-promo">
+                    <i class="fa fa-opencart"></i>
+                    <p>Quality Produts</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="single-promo">
+                    <i class="fa fa-truck"></i>
+                    <p>Free shipping</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="single-promo">
+                    <i class="fa fa-clock-o"></i>
+                    <p>Ontime Delivery</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="single-promo">
+                    <i class="fa fa-gift"></i>
+                    <p>New Arrivals</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- End promo area -->
 
 <div class="slider-area">
     <div class="zigzag-bottom"></div>
@@ -90,72 +157,3 @@
         </div>
     </div>
 </div> <!-- End slider area -->
-
-<div class="promo-area">
-    <div class="zigzag-bottom"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 col-sm-6">
-                <div class="single-promo">
-                    <i class="fa fa-opencart"></i>
-                    <p>Quality Produts</p>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="single-promo">
-                    <i class="fa fa-truck"></i>
-                    <p>Free shipping</p>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="single-promo">
-                    <i class="fa fa-clock-o"></i>
-                    <p>Ontime Delivery</p>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="single-promo">
-                    <i class="fa fa-gift"></i>
-                    <p>New Arrivals</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> <!-- End promo area -->
-
-<div class="maincontent-area">
-    <div class="zigzag-bottom"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="latest-product">
-                    <h2 class="section-title">Latest Products</h2>
-                    <div class="product-carousel">
-
-                        @foreach (var item in ViewBag.LatestProducts)
-                        {
-                            <div class="single-product">
-                                <div class="product-f-image">
-                                    <img src="@item.ProductImageURL" alt="">
-                                    <div class="product-hover">
-                                        <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i>View Details</a>
-                                    </div>
-                                </div>
-                                <h2><a href="">@item.ProductName</a></h2>
-                                <div class="product-carousel-price">
-                                    <ins>@item.ProductPrice QR</ins>
-
-                                    @if (item.ProductOldPrice != null)
-                                    {
-                                        <del> @item.ProductOldPrice QR</del>
-                                    }
-                                </div>
-                            </div>
-                        }
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>

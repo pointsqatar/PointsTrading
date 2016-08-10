@@ -13,17 +13,22 @@ namespace PointsTrading.Controllers
         public ActionResult Category(string id)
         {
             ProdutsManager produtsManager = new ProdutsManager();
-            ViewBag.Product = produtsManager.GetProducts(id);
-
             ViewBag.CatagoryName = produtsManager.GetProductCategories(id);
 
-            return View();
-        }
+            if (Request.QueryString["productID"] != null && Request.QueryString["productID"] != string.Empty)
+            {
+                string productID = Request.QueryString["productID"];
 
+                ViewBag.Product = produtsManager.GetProductById(productID);
 
-        public ActionResult Test()
-        {
-            return View();
+                return View("~/Views/Product/ProductDetail.cshtml");
+            }
+            else
+            {
+                ViewBag.Products = produtsManager.GetProducts(id);
+
+                return View();
+            }
         }
     }
 }

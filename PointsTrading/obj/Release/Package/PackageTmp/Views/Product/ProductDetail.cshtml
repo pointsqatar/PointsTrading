@@ -1,0 +1,94 @@
+﻿@using PointsTradingDataAccessLayer
+@{
+    ViewBag.Title = "Test";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ProductDetail singleProduct = new ProductDetail();
+    ProductCategory category = new ProductCategory();
+    if (ViewBag.Product != null)
+    {
+        singleProduct = (ProductDetail)ViewBag.Product;
+    }
+    if (ViewBag.CatagoryName[0] != null)
+    {
+        category = (ProductCategory)ViewBag.CatagoryName[0];
+    }
+}
+
+<div class="product-big-title-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="product-bit-title text-center">
+                    <h2>@singleProduct.ProductName</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="single-product-area">
+    <div class="zigzag-bottom"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="product-content-right">
+                    <div class="product-breadcroumb">
+                        <a href="@Url.Action("index","home")">Home</a>
+                        <a href="@Url.Action("category","product",new { id=category.CategoryID })">@category.CategoryName</a>
+                        <a href="@(Url.Action("category","product",new { id=singleProduct.ProductCategoryID })+"?productID="+ singleProduct.ProductID)">@singleProduct.ProductName</a>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="product-images">
+                                <div class="product-main-img">
+                                    <img src="@singleProduct.ProductImageURL" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="product-inner">
+                                <h2 class="product-name">@singleProduct.ProductName</h2>
+                                <div class="product-inner-price">
+                                    <ins>@singleProduct.ProductPrice QR</ins>
+                                    @if (!string.IsNullOrEmpty(singleProduct.ProductOldPrice))
+                                    {
+                                        <del>@singleProduct.ProductOldPrice QR</del>
+                                    }
+                                </div>
+
+                                <form action="" class="cart">
+                                    <button class="add_to_cart_button" type="submit">Buy Now</button>
+                                </form>
+
+                                <div class="product-inner-category">
+                                    <p>Category: <a href="">@singleProduct.ProductCategoryID</a>
+                                </div>
+
+                                <div role="tabpanel">
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane fade in active" id="home">
+                                            <h2>Product Description</h2>
+                                            @Html.Raw(singleProduct.ProductDescription)
+                                        </div>
+                                    </div>
+                                </div>
+
+                                @if (!string.IsNullOrEmpty(singleProduct.ProductVideo))
+                                {
+                                    <div class="videoWrapper">
+                                        <!-- Copy & Pasted from YouTube -->
+                                        <iframe width="560" height="349"
+                                                src="@("http://www.youtube.com/embed/"+singleProduct.ProductVideo.Trim()+"?rel=0&hd=1")" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -52,5 +52,17 @@ namespace PointsTradingBusinessLayer
             }
             return categories;
         }
+        
+        public ProductDetail GetProductById(string id)
+        {
+            ProductDetail product = new ProductDetail();
+            using (var dbContext = new PointsTradingEntities())
+            {
+                product = (from prod in dbContext.ProductDetails
+                          where prod.ProductID == id
+                          select prod).SingleOrDefault();
+            }
+            return product;
+        }
     }
 }
