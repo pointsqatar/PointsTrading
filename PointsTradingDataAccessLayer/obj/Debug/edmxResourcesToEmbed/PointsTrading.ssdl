@@ -21,6 +21,13 @@
     <Property Name="ProductCategoryID" Type="int" Nullable="false" />
     <Property Name="IsLatestProduct" Type="bit" />
   </EntityType>
+  <EntityType Name="Subscribers">
+    <Key>
+      <PropertyRef Name="SubscriberID" />
+    </Key>
+    <Property Name="SubscriberID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Email_ID" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
   <Association Name="FK_ProductCategory_ProductCategory">
     <End Role="ProductCategory" Type="Self.ProductCategory" Multiplicity="1" />
     <End Role="ProductCategory1" Type="Self.ProductCategory" Multiplicity="0..1" />
@@ -36,6 +43,7 @@
   <EntityContainer Name="PointsTradingModelStoreContainer">
     <EntitySet Name="ProductCategory" EntityType="Self.ProductCategory" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="ProductDetail" EntityType="Self.ProductDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Subscribers" EntityType="Self.Subscribers" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK_ProductCategory_ProductCategory" Association="Self.FK_ProductCategory_ProductCategory">
       <End Role="ProductCategory" EntitySet="ProductCategory" />
       <End Role="ProductCategory1" EntitySet="ProductCategory" />

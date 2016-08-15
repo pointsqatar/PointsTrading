@@ -27,5 +27,6 @@ namespace PointsTradingDataAccessLayer
     
         public virtual DbSet<ProductCategory> ProductCategories { get; set; }
         public virtual DbSet<ProductDetail> ProductDetails { get; set; }
+        public virtual DbSet<Subscriber> Subscribers { get; set; }
     }
 }

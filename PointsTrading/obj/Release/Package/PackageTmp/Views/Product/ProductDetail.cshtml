@@ -60,9 +60,34 @@
                                 </div>
 
                                 <form action="" class="cart">
-                                    <button class="add_to_cart_button" type="submit">Buy Now</button>
+                                    <button id="btnBuyNow" class="add_to_cart_button" type="button" data-toggle="modal" data-target="#myModal">Order Now</button><span>  *Cash On Delivery</span>
                                 </form>
+                                <div class="modal fade" id="myModal" role="dialog">
+                                    <div class="modal-dialog">
 
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Contact Us</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>We are providing only <b><i>Cash On Delivery(CoD)</i></b> payment method. With CoD you can pay in cash at the time of actual delivery of the product at your doorstep!</p>
+                                                <p><b>You can pay and collect your items any where in Qatar.</b></p>
+                                                <p>
+                                                    Phone: +974-44165200<br />
+                                                    Mobile: +974-33436655<br />
+                                                    Email Address: <a href="mailto:info@pointsqatar.com">info@pointsqatar.com</a><br />
+                                                </p>
+                                                <p>For more information <a href="http://www.pointsqatar.com/home/contact" target="_blank">click here</a>.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
                                 <div class="product-inner-category">
                                     <p>Category: <a href="@Url.Action("category","product",new { id=category.CategoryID })">@category.CategoryName</a>
                                 </div>
@@ -78,11 +103,14 @@
 
                                 @if (!string.IsNullOrEmpty(singleProduct.ProductVideo))
                                 {
-                                    <div class="videoWrapper">
-                                        <!-- Copy & Pasted from YouTube -->
-                                        <iframe width="560" height="349"
-                                                src="@("http://www.youtube.com/embed/"+singleProduct.ProductVideo.Trim()+"?rel=0&hd=1")" frameborder="0" allowfullscreen></iframe>
-                                    </div>
+                                    foreach (var item in singleProduct.ProductVideo.Split(','))
+                                    {
+                                        <div class="videoWrapper">
+                                            <!-- Copy & Pasted from YouTube -->
+                                            <iframe width="560" height="349"
+                                                    src="@("http://www.youtube.com/embed/"+item.Trim()+"?rel=0&hd=1")" frameborder="0" allow frameborder="0" allowfullscreen></iframe>
+                                        </div>
+                                    }
                                 }
                             </div>
                         </div>

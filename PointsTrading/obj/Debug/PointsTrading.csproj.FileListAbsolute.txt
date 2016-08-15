@@ -31,9 +31,13 @@ D:\Projects\PointsTrading\PointsTrading\bin\EntityFramework.dll
 D:\Projects\PointsTrading\PointsTrading\bin\EntityFramework.SqlServer.dll
 D:\Projects\PointsTrading\PointsTrading\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 D:\Projects\PointsTrading\PointsTrading\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\PointsTrading\PointsTrading\bin\Newtonsoft.Json.dll
 D:\Projects\PointsTrading\PointsTrading\bin\PointsTradingBusinessLayer.dll
 D:\Projects\PointsTrading\PointsTrading\bin\PointsTradingDataAccessLayer.dll
+D:\Projects\PointsTrading\PointsTrading\bin\System.Net.Http.Formatting.dll
 D:\Projects\PointsTrading\PointsTrading\bin\System.Web.Helpers.dll
+D:\Projects\PointsTrading\PointsTrading\bin\System.Web.Http.dll
+D:\Projects\PointsTrading\PointsTrading\bin\System.Web.Http.WebHost.dll
 D:\Projects\PointsTrading\PointsTrading\bin\System.Web.Mvc.dll
 D:\Projects\PointsTrading\PointsTrading\bin\System.Web.Razor.dll
 D:\Projects\PointsTrading\PointsTrading\bin\System.Web.Webpages.Deployment.dll
@@ -44,6 +48,10 @@ D:\Projects\PointsTrading\PointsTrading\bin\PointsTradingDataAccessLayer.pdb
 D:\Projects\PointsTrading\PointsTrading\bin\EntityFramework.xml
 D:\Projects\PointsTrading\PointsTrading\bin\EntityFramework.SqlServer.xml
 D:\Projects\PointsTrading\PointsTrading\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\PointsTrading\PointsTrading\bin\Newtonsoft.Json.xml
+D:\Projects\PointsTrading\PointsTrading\bin\System.Net.Http.Formatting.xml
+D:\Projects\PointsTrading\PointsTrading\bin\System.Web.Http.xml
+D:\Projects\PointsTrading\PointsTrading\bin\System.Web.Http.WebHost.xml
 D:\Projects\PointsTrading\PointsTrading\bin\System.Web.Razor.xml
 D:\Projects\PointsTrading\PointsTrading\bin\System.Web.Webpages.xml
 D:\Projects\PointsTrading\PointsTrading\bin\System.Web.Webpages.Deployment.xml

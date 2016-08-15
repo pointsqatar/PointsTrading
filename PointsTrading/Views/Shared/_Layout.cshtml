@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Points - Trading</title>
 
+    <!-- Latest jQuery form server -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
@@ -31,6 +34,33 @@
 
     <link rel="icon" href="~/img/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="~/img/favicon.ico" type="image/x-icon" />
+    <script>
+        function getBaseURL() {
+            return location.protocol + "//" + location.hostname + (location.port && ":" + location.port) + "/";
+        }
+
+        $(document).ready(function () {
+            $('#form-subscribe').submit(function (event) {
+                event.preventDefault();
+                var mail = $('#mailContent').val();
+                var data = { 'MailId': mail };
+                $.ajax({
+                    method: 'POST',
+                    async: true,
+                    data: data,
+                    url: getBaseURL() + 'api/mail/insertmailid',
+                    success: function (result) {
+                        if (result == 'success') {
+                            alert('Thanks for Subscribing!!!');
+                            $('#mailContent').val('');
+                        } else {
+                            alert('Sorry! Please try again.');
+                        }
+                    }
+                });
+            });
+        });
+    </script>
 
 </head>
 @{
@@ -38,16 +68,29 @@
     var catagories = menus.GetProductCategories();
 }
 <body>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'en,ar,hi,ml,ta,tl,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <div class="site-branding-area">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6">
-                    <div class="logo">
-                        <a href="@Url.Action("index","home")"><img src="~/img/points-logo.png" alt="logo" style="width:170px;height:100px;margin-top: 15px;"></a>
+                <div class="col-sm-10"></div>
+                <div class="col-sm-2">
+                    <div style="text-align:center" id="google_translate_element"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="logo" style="text-align:center">
+                        <a href="@Url.Action("index","home")"><img src="~/img/points-logo.png" alt="logo" style="width:165px;height:90px;margin-top: 15px;"></a>
                     </div>
                 </div>
 
-                <div class="col-sm-6">
+                <div class="col-sm-10">
                     <div class="shopping-item">
                         <a href="@Url.Action("index","home")">Points - <span class="cart-amunt">Trading</span><i class="fa fa-shopping-cart"></i></a>
                     </div>
@@ -89,7 +132,7 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="footer-about-us">
                         <h2>Points <span>Trading</span></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis sunt id doloribus vero quam laborum quas alias dolores blanditiis iusto consequatur, modi aliquid eveniet eligendi iure eaque ipsam iste, pariatur omnis sint! Suscipit, debitis, quisquam. Laborum commodi veritatis magni at?</p>
+                        <p>We believe in empowerment tranparency and doing right by all. We trade premium quality Electrical and Electronic products with warranty, partnering with companies and suppliers in Qatar.</p>
                         <div class="footer-social">
                             <a href="https://www.facebook.com/pointsqatar" target="_blank"><i class="fa fa-facebook"></i></a>
                         </div>
@@ -126,9 +169,9 @@
                         <h2 class="footer-wid-title">Newsletter</h2>
                         <p>Sign up to our newsletter and get exclusive deals you wont find anywhere else straight to your inbox!</p>
                         <div class="newsletter-form">
-                            <form action="#">
-                                <input type="email" placeholder="Type your email">
-                                <input type="submit" value="Subscribe">
+                            <form id="form-subscribe">
+                                <input type="email" id="mailContent" placeholder="Type your email" required>
+                                <input type="submit" id="SubmitMail" value="Subscribe">
                             </form>
                         </div>
                     </div>
@@ -147,19 +190,13 @@
                 </div>
 
                 <div class="col-md-4">
-                    @*<div class="footer-card-icon">
-                            <i class="fa fa-cc-discover"></i>
-                            <i class="fa fa-cc-mastercard"></i>
-                            <i class="fa fa-cc-paypal"></i>
-                            <i class="fa fa-cc-visa"></i>
-                        </div>*@
+                    <div class="copyright">
+                        <p>Total no. of Views: <a>@System.Web.HttpContext.Current.Application["NoOfUsers"].ToString()</a></p>
+                    </div>
                 </div>
             </div>
         </div>
     </div> <!-- End footer bottom area -->
-    <!-- Latest jQuery form server -->
-    <script src="https://code.jquery.com/jquery.min.js"></script>
-
     <!-- Bootstrap JS form CDN -->
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
@@ -172,5 +209,6 @@
 
     <!-- Main Script -->
     <script src="~/js/main.js"></script>
+
 </body>
 </html>

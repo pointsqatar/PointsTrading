@@ -42,5 +42,13 @@
       <End Role="ProductCategory" EntitySet="ProductCategories" />
       <End Role="ProductCategory1" EntitySet="ProductCategories" />
     </AssociationSet>
+    <EntitySet Name="Subscribers" EntityType="PointsTradingModel.Subscriber" />
   </EntityContainer>
+  <EntityType Name="Subscriber">
+    <Key>
+      <PropertyRef Name="SubscriberID" />
+    </Key>
+    <Property Name="SubscriberID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Email_ID" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
 </Schema>

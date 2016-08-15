@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Routing;
 
@@ -11,12 +12,20 @@ namespace PointsTrading
     {
         protected void Application_Start()
         {
-            //int noOfUsers = 0;
-
+            if (Application["NoOfUsers"] == null)
+            {
+                Application["NoOfUsers"] = 0;
+            }
+            GlobalConfiguration.Configure(WebApiConfig.Register);
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+        }
 
-            //Application["NoOfUsers"] = noOfUsers++;
+        protected void Session_Start()
+        {
+            Application.Lock();
+            Application["NoOfUsers"] = (int)Application["NoOfUsers"] + 1;
+            Application.UnLock();
         }
     }
 }
