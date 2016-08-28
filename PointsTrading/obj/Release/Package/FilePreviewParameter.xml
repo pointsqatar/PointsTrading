@@ -4,7 +4,7 @@
     <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\Projects\\PointsTrading\\PointsTrading\\obj\\Release\\Package\\PackageTmp$" />
     <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\Projects\\PointsTrading\\PointsTrading\\obj\\Release\\Package\\PackageTmp$" />
   </parameter>
-  <parameter name="PointsTradingEntities-Web.config Connection String" description="PointsTradingEntities Connection String used in web.config by the application to access the database." value="metadata=res://*/PointsTrading.csdl|res://*/PointsTrading.ssdl|res://*/PointsTrading.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=pointsserver.database.windows.net;initial catalog=PointsTrading;user id=points_admin;password=MaRuThI.89;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+  <parameter name="PointsTradingEntities-Web.config Connection String" description="" value="metadata=res://*/PointsTrading.csdl|res://*/PointsTrading.ssdl|res://*/PointsTrading.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=pointsserver.database.windows.net;initial catalog=PointsTrading;user id=points_admin;password=MaRuThI.89;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="">
     <parameterEntry kind="XmlFile" scope="D:\\Projects\\PointsTrading\\PointsTrading\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='PointsTradingEntities']/@connectionString" />
   </parameter>
 </parameters>
